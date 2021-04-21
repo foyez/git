@@ -98,6 +98,14 @@ git commit --amend # modify and add changes to the most recent commit
 git commit --amend -m "your message"
 ```
 
+## Undo last commit
+
+```bash
+git reset HEAD~
+or 
+git reset HEAD~1
+```
+
 ## Rollback an old commit
 
 ```bash
