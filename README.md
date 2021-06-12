@@ -97,20 +97,6 @@ git reset HEAD filename
 git reset HEAD -p # specify the changes you want to reset
 ```
 
-## Switch branch & keep changes
-
-1. switch with creating new branch
-```bash
-git switch -c "new_branch_name"
-```
-
-2. switch without creating new branch
-```bash
-git stash save
-git checkout branch
-git stash pop
-```
-
 ## Amend the most recent commit
 
 ```bash
@@ -157,6 +143,20 @@ git branch -m <name>
 
 ```bash
 git branch -d branch_name
+```
+
+## Switch branch & keep changes
+
+1. switch with creating new branch
+```bash
+git switch -c "new_branch_name"
+```
+
+2. switch without creating new branch
+```bash
+git stash save
+git checkout branch
+git stash pop
 ```
 
 ## Merge two branches
