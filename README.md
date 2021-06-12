@@ -6,11 +6,18 @@
 git config -l
 ```
 
-## Setup Git configuration:
+## Git configuration:
 
 ```bash
+# setup user info
 git config --global user.name "Foyez"
 git config --global user.email "foyezar@gmail.com"
+
+# edit global git configuration
+git config --global --edit 
+
+# set default branch name of git initialization
+git config --global init.defaultBranch <name>
 ```
 
 ## Cache Login credential:
@@ -138,6 +145,12 @@ git checkout branch_name
 
 ```bash
 git branch
+```
+
+## Rename a branch
+
+```bash
+git branch -m <name>
 ```
 
 ## Delete a branch
