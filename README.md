@@ -78,6 +78,13 @@ git diff --staged
 git rm filename
 ```
 
+## Remove tacked files/directories that was tracked already
+
+```bash
+git rm --cached <file>
+git rm -r --cached <folder> # for directory
+```
+
 ## Rename files
 
 ```bash
