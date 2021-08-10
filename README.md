@@ -10,7 +10,7 @@ git config -l
 
 ```bash
 # setup user info
-git config --global user.name "Foyez"
+git config --global user.name "foyez"
 git config --global user.email "foyezar@gmail.com"
 
 # edit global git configuration
@@ -143,7 +143,7 @@ git branch
 ## Rename a branch
 
 ```bash
-git branch -m <name>
+git branch -M <name>
 ```
 
 ## Delete a branch
