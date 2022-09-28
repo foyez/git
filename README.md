@@ -146,10 +146,18 @@ git branch
 git branch -M <name>
 ```
 
-## Delete a branch
+## Delete a branch locally & remotely
+
+Delete a local branch:
 
 ```bash
-git branch -d branch_name
+git branch -d <branch_name>
+```
+
+Delete a remote branch:
+
+```bash
+git push <remote_name> -d <branch_name> # remote_name is normally origin
 ```
 
 ## Switch branch & keep changes
@@ -195,12 +203,6 @@ git push -f # force a push request
 git fetch # download the latest changes from a remote repo
 git pull # download the latest changes from a remote repo and merge them with local branch
 git branch -r # check remote branches
-```
-
-## Remove a remote branch
-
-```bash
-git push --delete origin branch_name
 ```
 
 ## Git rebase (transfer completed work from one branch to another)
