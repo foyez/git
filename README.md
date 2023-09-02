@@ -94,7 +94,8 @@ git mv old_file new_file
 ## Revert unstaged changes
 
 ```bash
-git checkout filename
+git checkout filename # revert unstaged changes from specified file
+git checkout -- . # revert unstaged changes from all files
 ```
 
 ## Revert staged changes
@@ -202,7 +203,17 @@ git push # push changes to a remote repo
 git push -f # force a push request
 git fetch # download the latest changes from a remote repo
 git pull # download the latest changes from a remote repo and merge them with local branch
+git pull -r # download the latest changes from a remote repo and rebase them with local branch
 git branch -r # check remote branches
+```
+
+## Resolve a conflict
+
+```bash
+git pull -r
+# Resolve conflicts which changes you want to add
+git add .
+git rebase --continue
 ```
 
 ## Git rebase (transfer completed work from one branch to another)
