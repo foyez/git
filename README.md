@@ -102,6 +102,8 @@ git checkout -- . # revert unstaged changes from all files
 
 ```bash
 git reset HEAD filename
+git reset HEAD~2 # revert the last two commits
+git reset --hard HEAD~1 # revert the last commit and discard the changes
 git reset HEAD -p # specify the changes you want to reset
 ```
 
@@ -124,7 +126,7 @@ git reset HEAD~1
 ## Rollback an old commit
 
 ```bash
-git revert commit_id
+git revert commit_id # create a new commit to revert the old changes
 ```
 
 ## Create & switch branch
