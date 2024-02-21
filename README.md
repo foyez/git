@@ -9,9 +9,13 @@ git config -l
 ## Git configuration:
 
 ```bash
-# setup user info
-git config --global user.name "foyez"
-git config --global user.email "foyezar@gmail.com"
+# setup user info globally
+git config --global user.name "username"
+git config --global user.email "username@email.com"
+
+# setup user info locally (specific git repository)
+git config user.name "username"
+git config user.email "username@email.com"
 
 # edit global git configuration
 git config --global --edit 
