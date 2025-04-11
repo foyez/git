@@ -58,6 +58,19 @@ git commit -m "your message" # commit with message
 git commit -am "your message" # add & commit tracked files
 ```
 
+## Create a new repository on the command line
+
+```sh
+echo "# test" >> README.md # write "# test" in README.md
+git init # initialize git
+git add README.md # stage README.md
+git commit -m "first commit" # add commit
+git branch -M main # rename branch name to main
+git remote add origin git@github.com:username/repo.git # add a remote called origin, which points to git@github.com:username/repo.git
+git push -u origin main # push the local main branch to the origin remote, and remember this setup for next time.
+git remote set-url origin git@github.com:username/new-repo.git # update remote url
+```
+
 ## Commit history
 
 ```bash
