@@ -79,6 +79,7 @@ git log -p # see commit history including changes
 git log --stat # see commit history including line(s) changed and file names
 git log --graph --oneline # show log graph of a branch
 git log --graph --oneline --all # show log graph of all branches
+git shortlog -sne # display a summary of commits per author, including their email addresses (s=summary, n=sort numerically, e=email)
 ```
 
 ## See changes made before committing
